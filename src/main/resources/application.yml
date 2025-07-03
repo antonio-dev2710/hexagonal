@@ -1,0 +1,10 @@
+arantes:
+  client:
+    address:
+      url: http://localhost:8082/addresses
+
+sprig:
+  data:
+    mongodb:
+      uri: mongodb://localhost:27017/hexagonal
+
