@@ -1,17 +1,17 @@
 package com.arantes.hexagonal.application.core.domain;
 
-public class Costumer {
+public class Customer {
     private String id;
     private String name;
     private Address address;
     private String cpf;
     private Boolean isValidCpf;
 
-    public Costumer() {
+    public Customer() {
         this.isValidCpf = false;
     }
 
-    public Costumer(String id, String name, Address address, String cpf, Boolean isValidCpf) {
+    public Customer(String id, String name, Address address, String cpf, Boolean isValidCpf) {
         this.id = id;
         this.name = name;
         this.address = address;
