@@ -1,6 +1,7 @@
 package com.arantes.hexagonal.adapters.in.controller.mapper;
 
-import com.arantes.hexagonal.adapters.in.controller.CustumerRequest;
+import com.arantes.hexagonal.adapters.in.controller.request.CustumerRequest;
+import com.arantes.hexagonal.adapters.in.controller.response.CustomerResponse;
 import com.arantes.hexagonal.application.core.domain.Customer;
 import org.mapstruct.Mapper;
 import org.mapstruct.Mapping;
@@ -12,4 +13,6 @@ public interface CustomerMapper {
     @Mapping(target = "address", ignore = true)
     @Mapping(target = "isValidCpf", ignore = true)
     Customer toCustomer(CustumerRequest request);
+
+    CustomerResponse toCustomerResponse(Customer custumer);
 }

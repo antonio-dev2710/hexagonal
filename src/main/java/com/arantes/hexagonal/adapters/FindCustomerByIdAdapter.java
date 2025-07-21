@@ -8,7 +8,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 
 import java.util.Optional;
 
-public class findCustomerByIdAdapter implements FindCustomerByIdOutPutPort {
+public class FindCustomerByIdAdapter implements FindCustomerByIdOutPutPort {
     @Autowired
     private CustomerRepository customerRepository;
 

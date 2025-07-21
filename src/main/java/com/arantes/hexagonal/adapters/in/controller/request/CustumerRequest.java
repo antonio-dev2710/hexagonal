@@ -1,4 +1,4 @@
-package com.arantes.hexagonal.adapters.in.controller;
+package com.arantes.hexagonal.adapters.in.controller.request;
 
 import jakarta.validation.constraints.NotBlank;
 import lombok.Data;
