@@ -2,11 +2,11 @@ package com.arantes.hexagonal.application.core.usecase;
 
 import com.arantes.hexagonal.application.core.domain.Customer;
 import com.arantes.hexagonal.application.ports.in.FindCustomerByIdInputPort;
-import com.arantes.hexagonal.application.ports.in.updateCustomerInputPort;
+import com.arantes.hexagonal.application.ports.in.UpdateCustomerInputPort;
 import com.arantes.hexagonal.application.ports.out.FindAddressByZipCodeOutputPort;
 import com.arantes.hexagonal.application.ports.out.UpdateCustomerOutputPort;
 
-public class UpdateCustomerUseCase implements updateCustomerInputPort {
+public class UpdateCustomerUseCase implements UpdateCustomerInputPort {
 
     private final FindCustomerByIdInputPort findCustomerByIdInputPort;
 
