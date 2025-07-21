@@ -2,6 +2,7 @@ package com.arantes.hexagonal.config;
 
 import com.arantes.hexagonal.adapters.out.FindAddressZipCodeAdapter;
 import com.arantes.hexagonal.adapters.out.InsertCustomerAdapter;
+import com.arantes.hexagonal.adapters.out.SendCpfValidationAdapter;
 import com.arantes.hexagonal.application.core.usecase.InsertCustumerUseCase;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
@@ -13,8 +14,10 @@ public class InsertCustomerConfig {
     public InsertCustumerUseCase
     insertCustumerUseCase(
             FindAddressZipCodeAdapter findAddressZipCodeAdapter,
-            InsertCustomerAdapter insertCustomerAdapter
+            InsertCustomerAdapter insertCustomerAdapter,
+            SendCpfValidationAdapter sendCpfValidationAdapter
     ) {
-        return new InsertCustumerUseCase(findAddressZipCodeAdapter,insertCustomerAdapter);
+        return new InsertCustumerUseCase(findAddressZipCodeAdapter,insertCustomerAdapter,
+                sendCpfValidationAdapter);
     }
 }
